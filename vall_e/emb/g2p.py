@@ -456,7 +456,6 @@ def _get_graphs(path):
 
 
 def encode(graphs: str) -> list[str]:
-    g2p = _get_model()
     phones = convert_to_phonemes(graphs)
     ignored = {" ", *string.punctuation}
     return ["_" if p in ignored else p for p in phones]
