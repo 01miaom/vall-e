@@ -41,7 +41,7 @@ class Config(ConfigBase):
     spkr_name_getter: str = "lambda p: p.parts[-2]"
 
     min_phones: int = 10
-    max_phones: int = 50
+    max_phones: int = 100
 
     use_fp16: bool = True
     gradient_accumulation_steps: int = 1
