@@ -431,6 +431,7 @@ shengyun2ph_dict = {
     'n': 'n ng'
 }
 
+@cache
 def convert_to_phonemes(text):
     tmp = pinyin(text, style=Style.TONE3, neutral_tone_with_five=True)
     phonemes = []
@@ -454,7 +455,7 @@ def _get_graphs(path):
         graphs = f.read()
     return graphs
 
-
+@cache
 def encode(graphs: str) -> list[str]:
     phones = convert_to_phonemes(graphs)
     ignored = {" ", *string.punctuation}
