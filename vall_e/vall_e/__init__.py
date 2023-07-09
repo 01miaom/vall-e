@@ -16,16 +16,16 @@ def get_model(name):
     if "-quarter" in name:
         model = Model(
             cfg.num_tokens,
-            d_model=256,
+            d_model=128,
             n_heads=4,
-            n_layers=12,
+            n_layers=32,
         )
     elif "-half" in name:
         model = Model(
             cfg.num_tokens,
             d_model=512,
             n_heads=8,
-            n_layers=12,
+            n_layers=32,
         )
     else:
         if name not in ["ar", "nar"]:
@@ -35,7 +35,7 @@ def get_model(name):
             cfg.num_tokens,
             d_model=1024,
             n_heads=16,
-            n_layers=12,
+            n_layers=32,
         )
 
     return model
