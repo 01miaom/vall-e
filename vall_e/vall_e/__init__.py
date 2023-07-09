@@ -18,7 +18,7 @@ def get_model(name):
             cfg.num_tokens,
             d_model=128,
             n_heads=4,
-            n_layers=18,
+            n_layers=12,
         )
     elif "-half" in name:
         model = Model(
