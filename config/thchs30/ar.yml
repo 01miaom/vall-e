@@ -1,4 +1,4 @@
-data_dirs: [data/thchs30/]
+data_dirs: [data/thchs30]
 spkr_name_getter: "lambda p: p.parts[-3]"
 
 model: ar
