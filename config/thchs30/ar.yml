@@ -1,6 +1,6 @@
 data_dirs: [data/thchs30]
 
-model: ar
+model: ar-quarter
 batch_size: 2
 eval_batch_size: 2
 save_ckpt_every: 500
