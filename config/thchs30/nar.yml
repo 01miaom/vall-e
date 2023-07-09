@@ -1,9 +1,10 @@
 data_dirs: [data/thchs30]
-spkr_name_getter: "lambda p: p.parts[-3]"
 
 model: nar
 batch_size: 12
 eval_batch_size: 12
 eval_every: 1_000
+save_ckpt_every: 500
+max_iter: 1000
 
 sampling_temperature: 0.2
