@@ -1,6 +1,6 @@
 data_dirs: [data/thchs30]
 
-model: nar
+model: nar-quarter
 batch_size: 2
 eval_batch_size: 2
 eval_every: 2000
