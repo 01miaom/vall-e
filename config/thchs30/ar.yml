@@ -1,10 +1,10 @@
 data_dirs: [data/thchs30]
 
 model: ar
-batch_size: 12
-eval_batch_size: 12
+batch_size: 2
+eval_batch_size: 2
 save_ckpt_every: 500
-eval_every: 500
-max_iter: 1000
+eval_every: 2000
+max_iter: 2000
 
 sampling_temperature: 1.0
