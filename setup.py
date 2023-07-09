@@ -54,6 +54,7 @@ setup(
         "torch>=1.13.0",
         "torchaudio>=0.13.0",
         "tqdm>=4.64.1",
+        "pypinyin>=0.49.0",
     ],
     url="https://github.com/enhuiz/vall-e",
 )
